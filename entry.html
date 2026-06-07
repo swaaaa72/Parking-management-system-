@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Entry</title>
+<link rel="stylesheet" href="/static/style.css">
+<script src="/static/script.js"></script>
+</head>
+<body>
+<h2>Parking Entry</h2>
+<form method="POST">
+<select name="user_type" id="user_type" onchange="updateCategory()" required>
+<option value="">Select</option>
+<option value="Student">Student</option>
+<option value="Teacher/Staff">Teacher/Staff</option>
+<option value="Visitor">Visitor</option>
+</select>
+
+<select name="category" id="category" required>
+<option value="">Select</option>
+</select>
+
+<input type="text" name="name" placeholder="Name" required>
+<input type="text" name="vehicle_number" placeholder="Vehicle Number" required>
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>
